@@ -1,10 +1,7 @@
 This Project is about making a smart camera which records video (in the night), and saves 
-it only when there is movemente there.
-
-It doesn't use AI for the moment. Just some Computer Vision euristics.
-
+it only when there is movemente there.  
+It doesn't use AI for the moment. Just some Computer Vision euristics.  
 The idea is to use it to record wild life in the forest.
-
 
 
 ### The project can be divided into multiple subprojects (or subpipelines):
