@@ -6,11 +6,11 @@ The idea is to use it to record wild life in the forest.
 
 ### The project can be divided into multiple subprojects (or subpipelines):
 
-#### Connect a camera to a Raspberry:
+#### 1. Connect a camera to a Raspberry:
 We will start with the cero version, since it's cheaper and comsumes less energy).  
 Get to be able to save video from it.
 
-#### Be able to detect movement.
+#### 2. Be able to detect movement.
 Build a movement sensor based on pixel values. We will create a heatmap of areas where the pixel value   
 are different to one fram to another (it should have some memory or at least be robust to frame errors).  
 example: if frame 3 is different to frame 2, also compare frame 4 with frame 1. If True, there is a change,  
@@ -22,19 +22,19 @@ We will build a heat map of areas with biggger pixel differences.
 - I've check movement sensors, but they are just low resolution cameras, so we can build that with our camera.
 
 
-#### Take actions
+#### 3. Take actions
 1. Record only when movement happens
 - Build methods to start-stop recording easily.  
 
 2. Move the camera. (this is a whole new project).
 
-#### Move Camera
+#### 4. Move Camera
 1. Build a servo camera. These are the steps:
   - Buy a servomotor and make it move 45º every 10 secs (one lap in 80 secs).
   - Be able to move right and left (in the future also up and down).
   - Put all together ... see next point.  
 
-#### Put all together:
+#### 5. Put all together:
 - camera starts at position 0.
 - It moves by default 45º every 8 secs (1 lap every 64 secs).
 - But, if it detects movement it stays in position and does the next.
